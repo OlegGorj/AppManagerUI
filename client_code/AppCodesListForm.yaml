@@ -1,0 +1,18 @@
+components:
+- type: ColumnPanel
+  properties: {role: card, col_widths: '{}'}
+  name: card_1
+  layout_properties: {grid_position: 'VPIBHG,EIBQKD'}
+  event_bindings: {}
+  components:
+  - type: RepeatingPanel
+    properties: {role: null, tooltip: '', border: '', foreground: '', items: null,
+      visible: true, spacing_above: small, spacing_below: small, item_template: AppCodeShortView,
+      background: ''}
+    name: repeating_panel_1
+    layout_properties: {grid_position: 'VYWZAF,OYLZCP'}
+    event_bindings: {}
+container:
+  type: ColumnPanel
+  event_bindings: {}
+  properties: {col_widths: '{}'}
