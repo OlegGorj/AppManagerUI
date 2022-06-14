@@ -9,13 +9,21 @@ RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.d
     rm google-chrome-stable_current_amd64.deb
 
 
-RUN apt-get -yyy update && apt-get -yyy install java-1.8.0-amazon-corretto-jdk ghostscript
+RUN apt-get -yyy update && apt-get -yyy install java-1.8.0-amazon-corretto-jdk ghostscript tree
 
 RUN pip install anvil-app-server
 RUN anvil-app-server || true
 
 VOLUME /apps
 WORKDIR /apps
+RUN mkdir -p /apps/AppManager
+
+COPY *.py /apps/AppManager
+COPY *.yaml /apps/AppManager
+COPY client_code /apps/AppManager/client_code
+COPY theme /apps/AppManager/theme
+
+RUN tree /apps
 
 RUN mkdir /anvil-data
 
@@ -23,6 +31,6 @@ RUN useradd anvil
 RUN chown -R anvil:anvil /anvil-data
 USER anvil
 
-ENTRYPOINT ["anvil-app-server", "--data-dir", "/anvil-data"]
-
-CMD ["--app", "MainApp"]
+ENTRYPOINT ["anvil-app-server", "--data-dir", "/anvil-data", "--app", "AppManager"]
+# CMD ["--app", "MainApp"]
+#CMD ["sleep 200"]
