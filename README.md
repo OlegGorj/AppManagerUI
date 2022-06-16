@@ -21,3 +21,6 @@ Access UI: `http://localhost:3030`
 ## Refs
 
 [https://github.com/anvil-works/anvil-runtime](https://github.com/anvil-works/anvil-runtime/blob/master/doc/getting-started.md)
+
+Anvil App Server image: https://hub.docker.com/r/anvilworks/anvil-app-server
+
