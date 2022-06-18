@@ -1,5 +1,5 @@
 
-## Simple UI application using Python frameworks.
+## Simple UA application using Python frameworks.
 
 
 Run in container using Server:
@@ -14,13 +14,6 @@ Run as stand-along container:
 docker run -vp 3030:3030 oleggorj/app-manager-ui:0.0.1
 ```
 
-Access UI: `http://localhost:3030`
+Access UI:
 
-
-
-## Refs
-
-[https://github.com/anvil-works/anvil-runtime](https://github.com/anvil-works/anvil-runtime/blob/master/doc/getting-started.md)
-
-Anvil App Server image: https://hub.docker.com/r/anvilworks/anvil-app-server
-
+`http://localhost:3030`
