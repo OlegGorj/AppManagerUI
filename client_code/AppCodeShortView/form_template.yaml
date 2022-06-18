@@ -1,13 +1,8 @@
 container:
   type: ColumnPanel
   event_bindings: {}
-  properties: {col_widths: '{"UREFFS":19,"EDOUKJ":18,"KDQZMU":15}'}
+  properties: {col_widths: '{"UREFFS":15,"EDOUKJ":12,"MPBQJL":19,"YTBMWF":10,"RCFQVM":16}'}
 components:
-- type: Spacer
-  properties: {height: 32}
-  name: spacer_2
-  layout_properties: {grid_position: 'VBQESK,KDQZMU'}
-  event_bindings: {}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: '', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,

@@ -1,0 +1,127 @@
+components:
+- type: ColumnPanel
+  properties: {role: card, col_widths: '{"MAZRTW":30,"KSOQGZ":30}'}
+  name: card_1
+  layout_properties: {grid_position: 'GRVZSK,UTUHGO VPIBHG,EIBQKD'}
+  event_bindings: {}
+  components:
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{"QSLWEC":20,"PCYTAC":40}'}
+    name: card_4
+    layout_properties: {grid_position: 'AOBXCI,QRXVDI'}
+    event_bindings: {}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: ID, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_3
+      layout_properties: {grid_position: 'MOXPAV,QSLWEC'}
+      event_bindings: {}
+    - type: Label
+      properties: {}
+      name: app_code_id_label
+      layout_properties: {grid_position: 'MOXPAV,PCYTAC'}
+      event_bindings: {}
+  - type: RichText
+    properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+      foreground: '', visible: true, font_size: null, content: Portfolio, font: '',
+      spacing_above: small, spacing_below: small, data: null, background: '', format: markdown}
+    name: rich_text_1_copy
+    layout_properties:
+      col_widths: {}
+      grid_position: VVTAOY,YGBSOW
+    event_bindings: {}
+  - type: Label
+    properties: {}
+    name: portfolio_label
+    layout_properties:
+      col_widths: {}
+      grid_position: VVTAOY,LSAKJM
+    event_bindings: {}
+  - type: RichText
+    properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+      foreground: '', visible: true, font_size: null, content: App Code, font: '',
+      spacing_above: small, spacing_below: small, data: null, background: '', format: markdown}
+    name: rich_text_1
+    layout_properties: {grid_position: 'ONHFWI,MAZRTW HGLTBS,VKGOLN'}
+    event_bindings: {}
+    components: []
+  - type: RichText
+    properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+      foreground: '', visible: true, font_size: null, content: Service Tier, font: '',
+      spacing_above: small, spacing_below: small, data: null, background: '', format: markdown}
+    name: rich_text_2
+    layout_properties: {grid_position: 'ONHFWI,MAZRTW BKHDQW,TBXXXL'}
+    event_bindings: {}
+  - type: Label
+    properties: {}
+    name: app_code_label
+    layout_properties: {grid_position: 'ONHFWI,KSOQGZ TUFYQG,JSVKDD'}
+    event_bindings: {}
+  - type: Label
+    properties: {}
+    name: service_tier_label
+    layout_properties: {grid_position: 'ONHFWI,KSOQGZ VGFWLC,WGFDVA'}
+    event_bindings: {}
+- type: ColumnPanel
+  properties: {role: card, col_widths: '{"FGXIIV":20}'}
+  name: card_2
+  layout_properties: {grid_position: 'GRVZSK,UTUHGO SPKOVZ,FOOOWK'}
+  components:
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Cloud provider, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_1
+    layout_properties: {grid_position: 'QUWDOG,FGXIIV'}
+    event_bindings: {}
+  - type: Label
+    properties: {}
+    name: cloud_provider_label
+    layout_properties: {grid_position: 'QUWDOG,VSENCZ'}
+    event_bindings: {}
+  event_bindings: {}
+- type: ColumnPanel
+  properties: {role: card, col_widths: '{}'}
+  name: card_3
+  layout_properties: {grid_position: 'GRVZSK,UTUHGO QBSYRF,SUZVKM'}
+  event_bindings: {}
+  components:
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Target TFE, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'TBLIXM,ALASUJ'}
+    event_bindings: {}
+  - type: Label
+    properties: {}
+    name: tfe_label
+    layout_properties: {grid_position: 'TBLIXM,QDIOUM'}
+    event_bindings: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Onboard Module ver, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_4
+    layout_properties: {grid_position: 'KDBYIH,NBAFFU'}
+    event_bindings: {}
+  - type: Label
+    properties: {}
+    name: onboard_module_ver_label
+    layout_properties: {grid_position: 'KDBYIH,TEVVJR'}
+    event_bindings: {}
+- type: Spacer
+  properties: {height: 478}
+  name: spacer_1
+  layout_properties: {grid_position: 'GRVZSK,QNMXWH'}
+  event_bindings: {}
+container:
+  type: ColumnPanel
+  event_bindings: {}
+  properties: {col_widths: '{"EIBQKD":35,"UTUHGO":40,"QNMXWH":20}'}

@@ -5,11 +5,33 @@ container:
   event_bindings: {}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: never, col_spacing: small, spacing_above: small, col_widths: '{"JABBBP":25,"QBSHMX":25,"WTJHXG":50,"AUZXXK":10}',
+    spacing_below: small, background: ''}
   name: content_panel
   layout_properties: {slot: default}
   event_bindings: {}
-  components: []
+  components:
+  - type: ColumnPanel
+    properties: {role: card}
+    name: card_1
+    layout_properties: {grid_position: 'SDXNZT,WTJHXG'}
+    event_bindings: {}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1
+    layout_properties: {grid_position: 'SDXNZT,AUZXXK'}
+    event_bindings: {}
+  - type: ColumnPanel
+    properties: {}
+    name: content_panel_1
+    layout_properties: {grid_position: 'BGLOJZ,JABBBP'}
+    event_bindings: {}
+  - type: ColumnPanel
+    properties: {}
+    name: content_panel_2
+    layout_properties: {grid_position: 'BGLOJZ,QBSHMX'}
+    event_bindings: {}
 - type: Link
   properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
     visible: true, text: Home, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,

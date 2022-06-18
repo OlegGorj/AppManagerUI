@@ -1,7 +1,7 @@
 container:
   type: ColumnPanel
   event_bindings: {}
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"EIBQKD":35,"UZLVPB":15}'}
 components:
 - type: ColumnPanel
   properties: {role: card, col_widths: '{"WHETZB":45,"TURRST":15}'}
