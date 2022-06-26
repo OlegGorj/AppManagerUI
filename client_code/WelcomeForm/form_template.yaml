@@ -17,6 +17,12 @@ components:
     name: label_1
     layout_properties: {grid_position: 'EBZUFB,FDGVZT'}
     event_bindings: {}
+  - type: RichText
+    properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+      foreground: '', visible: true, font_size: null, content: '', font: '', spacing_above: small,
+      spacing_below: small, data: null, background: '', format: markdown}
+    name: rich_text_1
+    layout_properties: {grid_position: 'ZWURFE,JDKLRI'}
   - type: Label
     properties: {}
     name: spacer_1
