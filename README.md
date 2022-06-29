@@ -11,6 +11,7 @@ docker run -v ${PWD}/AppManagerUI-github:/apps/AppManagerUI -p 3030:3030 anvilwo
 Run as stand-along container:
 
 ```
+docker build -t oleggorj/app-manager-ui:0.0.1 .
 docker run -vp 3030:3030 oleggorj/app-manager-ui:0.0.1
 ```
 
