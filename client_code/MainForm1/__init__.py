@@ -49,7 +49,8 @@ class MainForm1(MainForm1Template):
     ]
     self.link_2.role = 'selected'
     self.content_panel_1.clear()
-    self.current_form = AppCodesListForm(data=_data)
+    self.current_form = AppCodesListForm(data=Globals.onbordings)
+    
     self.content_panel_1.add_component(self.current_form, slot="default")
     self.content_panel_1.visible = True
  
