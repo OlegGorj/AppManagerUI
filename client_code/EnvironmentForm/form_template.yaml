@@ -1,0 +1,83 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Name, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_1
+  layout_properties: {grid_position: 'GOZMIP,FSSEKZ'}
+- type: Label
+  properties: {}
+  name: name_label
+  layout_properties: {grid_position: 'GOZMIP,GKIKJD'}
+  data_bindings:
+  - {property: text, code: 'self.item[''name'']'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: TFE agents enabled, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_2
+  layout_properties: {grid_position: 'JWEVCX,SMPEFU'}
+- type: Label
+  properties: {}
+  name: agents_enabled_label
+  layout_properties: {grid_position: 'JWEVCX,MYDNDV'}
+  data_bindings:
+  - {property: text, code: 'self.item[''agents_enabled'']'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: TFE agents count, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_3
+  layout_properties: {grid_position: 'BXWHVU,OXMEJC'}
+- type: Label
+  properties: {}
+  name: tfe_agents_count_label
+  layout_properties: {grid_position: 'BXWHVU,FTZNFF'}
+  data_bindings:
+  - {property: text, code: 'self.item[''tfe_agents_count'']'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: TFE agent version, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_8
+  layout_properties: {grid_position: 'GXUDWV,ZLNOFM'}
+- type: Label
+  properties: {}
+  name: tfe_agent_version_label
+  layout_properties: {grid_position: 'GXUDWV,BLLGWO'}
+  data_bindings:
+  - {property: text, code: 'self.item[''tfe_agent_version'']'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: TFE agents VM SKU, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_4
+  layout_properties: {grid_position: 'EZYHZA,ABVZFI'}
+- type: Label
+  properties: {}
+  name: tfe_agent_vm_sku_label
+  layout_properties: {grid_position: 'EZYHZA,QYOTTV'}
+  data_bindings:
+  - {property: text, code: 'self.item[''tfe_agent_vm_sku'']'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: SEO Image version, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_5
+  layout_properties: {grid_position: 'RWGMKF,INZXHA'}
+- type: Label
+  properties: {}
+  name: soe_image_version_label
+  layout_properties: {grid_position: 'RWGMKF,UCVVJV'}
+  data_bindings:
+  - {property: text, code: 'self.item[''soe_image_version'']'}
+is_package: true

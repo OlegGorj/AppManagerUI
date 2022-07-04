@@ -1,31 +1,25 @@
 components:
 - type: ColumnPanel
-  properties: {role: card, col_widths: '{"MAZRTW":25,"KSOQGZ":35,"YGBSOW":25,"LSAKJM":35}'}
+  properties: {role: card, col_widths: '{"MAZRTW":25,"KSOQGZ":35,"YGBSOW":25,"LSAKJM":35,"HGBHCK":25,"FLMDNE":35}'}
   name: card_1
   layout_properties: {grid_position: 'VPIBHG,EIBQKD'}
   event_bindings: {}
   components:
-  - type: ColumnPanel
-    properties: {role: card, col_widths: '{"QSLWEC":20,"PCYTAC":40}'}
-    name: card_4
-    layout_properties: {grid_position: 'AOBXCI,QRXVDI'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: ID, font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_3
+    layout_properties: {grid_position: 'QRAZET,HGBHCK'}
     event_bindings: {}
-    components:
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: ID, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_3
-      layout_properties: {grid_position: 'MOXPAV,QSLWEC'}
-      event_bindings: {}
-    - type: Label
-      properties: {}
-      name: app_code_id_label
-      layout_properties: {grid_position: 'MOXPAV,PCYTAC'}
-      event_bindings: {}
-      data_bindings:
-      - {property: text, code: 'self._data[''id'']'}
+  - type: Label
+    properties: {}
+    name: app_code_id_label
+    layout_properties: {grid_position: 'QRAZET,FLMDNE'}
+    event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self._data[''id'']'}
   - type: RichText
     properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
       foreground: '', visible: true, font_size: null, content: Portfolio, font: '',
@@ -59,6 +53,15 @@ components:
     name: rich_text_2
     layout_properties: {grid_position: 'ONHFWI,MAZRTW BKHDQW,TBXXXL'}
     event_bindings: {}
+    components:
+    - type: RichText
+      properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+        foreground: '', visible: true, font_size: null, content: Status, font: '',
+        spacing_above: small, spacing_below: small, data: null, background: '', format: markdown}
+      name: rich_text_5
+      layout_properties:
+        col_widths: {}
+        grid_position: RIGTIC,CRDDAE
   - type: Label
     properties: {}
     name: app_code_label
@@ -71,6 +74,16 @@ components:
     name: service_tier_label
     layout_properties: {grid_position: 'ONHFWI,KSOQGZ VGFWLC,WGFDVA'}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self._data[''tier'']'}
+  - type: Label
+    properties: {}
+    name: status_label
+    layout_properties:
+      col_widths: {}
+      grid_position: ONHFWI,KSOQGZ KHVEVU,BJYWUO
+    data_bindings:
+    - {property: text, code: 'self._data[''state'']'}
 - type: ColumnPanel
   properties: {role: card, col_widths: '{"FGXIIV":20,"VSENCZ":32}'}
   name: card_2
@@ -89,6 +102,8 @@ components:
     name: cloud_provider_label
     layout_properties: {grid_position: 'QUWDOG,VSENCZ'}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self._data[''cloud_provider'']'}
   event_bindings: {}
 - type: ColumnPanel
   properties: {role: card, col_widths: '{"ALASUJ":25,"QDIOUM":35,"NBAFFU":25,"TEVVJR":35}'}
@@ -105,10 +120,15 @@ components:
     layout_properties: {grid_position: 'TBLIXM,ALASUJ'}
     event_bindings: {}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
     name: tfe_label
     layout_properties: {grid_position: 'TBLIXM,QDIOUM'}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self._data[''tfe'']'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Onboard Module ver, font_size: null, font: '', spacing_above: small,
@@ -122,6 +142,8 @@ components:
     name: onboard_module_ver_label
     layout_properties: {grid_position: 'KDBYIH,TEVVJR'}
     event_bindings: {}
+    data_bindings:
+    - {property: text, code: 'self._data[''tf_onboarding_module_version'']'}
 - type: ColumnPanel
   properties: {role: card, col_widths: '{}'}
   name: card_5
@@ -133,6 +155,11 @@ components:
       spacing_above: small, spacing_below: small, data: null, background: '', format: markdown}
     name: rich_text_3
     layout_properties: {grid_position: 'XFVKCU,KFTDCQ'}
+    components:
+    - type: ColumnPanel
+      properties: {}
+      name: column_panel_1
+      layout_properties: {}
 container:
   type: ColumnPanel
   event_bindings: {}
