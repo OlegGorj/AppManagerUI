@@ -1,5 +1,5 @@
 
-## Simple UA application using Python frameworks.
+## Simple UI application using Python frameworks.
 
 
 1) Run in container using Server:
